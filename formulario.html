@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="login.php" method="POST"> <!--con get se envian los parametros por url y con post no, se envian por debajo-->
+        <input type="email" name="email" required placeholder="Correo" id ="email">
+        <input type="password" name="password" required placeholder="Contraseña" id="password">
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+    <form action="buscador.php" method="GET">
+        Palabra: <input type="text" name="palabra" required placeholder="Palabra a buscar" id="palabra">
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
+
+
+
+<!--http://localhost/MI_PRIMERA_PAGINA/login.php?email=micorreo%401.cl&password=123-->
